@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a1market</title>
+
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+  body {
+    font-family:'Montserrat','Poppins';
+  }
+  
+    section{
+      width: 95%;
+      margin: 15px auto;
+      padding:20px;
+      background:#fff;
+      border-radius:0 8px 0 8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section h2{
+      color:#d10000;
+      margin-bottom:15px;
+      font-size:1.5rem;
+      font-family:'Poppins';
+    }
+
+    section h3{
+      margin-top:20px;
+      color:#000;      
+    }
+
+    section p{
+      margin:10px 0;
+      color:#555;
+      font-family:'Poppins';
+    }
+
+    footer{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* Icons ke beech me thoda space dene ke liye */
+    header .nav-links a i,
+    .sidebar a i,
+    section p i,
+    section h3 i {
+      margin-right: 8px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Respansive Nav for Desktop (Right Side) -->
+  <header>
+  <div class="logo">
+    <h3><span style="color:red">a1</span>market</h3>
+  </div>
+  <nav class="nav-links">
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about"><i class="fa-solid fa-compass"></i> About</a>
+    <a href="#terms"><i class="fa-solid fa-file-shield"></i> Terms</a>
+    <a href="#contact"><i class="fa-solid fa-user"></i> Contact</a>
+  </nav>
+    
+  <div class="menu-icon" onclick="openSidebar()">
+    <span><i class="fa fa-bars"></i></span>
+  </div>
+</header>
+
+<!-- Sidebar for Mobile (Right Side) --> 
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="closeSidebar()">&times;</span>
+   <a href="#">Home</a>
+  <a href="#about">About us</a>
+  <a href="#terms">Terms & Policy</a>
+  <a href="#faq">Frequntly Ask Questions</a>  
+ <a href="#contact">Contact us</a>
+ <br>
+ <img src="img/footer.jpg" height="auto" width="200px">
+</div>
+ 
+ <br><br><br>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="reveal">
+    <h2><i class="fa-solid fa-circle-info"></i> About Us</h2>
+
+    <p>
+      <strong>a1market</strong> is a platform dedicated to providing
+      daily market and mandi rate updates from various regions.
+    </p>
+
+    <p>
+      Our mission is to help farmers, traders, retailers,
+      and consumers stay informed about current market prices
+      and commodity trends.
+    </p>
+
+    <p>
+      We aim to deliver accurate, simple, and easy-to-access
+      information for everyone.
+    </p>
+
+    <p>
+      <strong>Contact:</strong> <i class="fa-solid fa-envelope"></i>info@a1market.com
+    </p>
+    </div>
+  </section>
+
+  <!-- Terms & Policy -->
+  <section id="terms">
+    <div class="reveal">
+    <h2><i class="fa-solid fa-file-shield"></i> Terms & Privacy Policy</h2>
+
+    <h3><i class="fa-solid fa-info"></i>1. Information Usage</h3>
+    <p>
+      All information available on a1market is provided
+      for informational purposes only.
+    </p>
+
+    <h3><i class="fa-solid fa-check-double"></i>2. Data Accuracy</h3>
+    <p>
+      We try our best to provide accurate and updated market rates,
+      but we do not guarantee complete accuracy at all times.
+    </p>
+
+    <h3><i class="fa-solid fa-link"></i>3. Third-Party Links</h3>
+    <p>
+      Our website may contain links to external websites.
+      We are not responsible for their content or policies.
+    </p>
+
+    <h3><i class="fa-solid fa-pen-to-square"></i>4. Policy Changes</h3>
+    <p>
+      We may update our policies from time to time.
+      Continued use of the website indicates acceptance
+      of these changes.
+    </p>
+
+    <p>
+      <strong>Support:</strong> <i class="fa-solid fa-headset"></i>support@a1market.com
+    </p>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faq">
+    <div class="reveal">
+    <h2><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+
+    <h3><i class="fa-solid fa-question"></i>Q1: What is a1market?</h3>
+    <p>
+      a1market is an online platform that provides daily
+      market and mandi rate information.
+    </p>
+
+    <h3><i class="fa-solid fa-question"></i>Q2: Where does the data come from?</h3>
+    <p>
+      Data is collected from trusted market sources
+      and publicly available information.
+    </p>
+
+    <h3><i class="fa-solid fa-question"></i>Q3: How often are rates updated?</h3>
+    <p>
+      Rates are updated regularly whenever new information
+      becomes available.
+    </p>
+
+    <h3><i class="fa-solid fa-question"></i>Q4: Is the information accurate?</h3>
+    <p>
+      We strive for accuracy, but users should verify
+      information before making business decisions.
+    </p>
+
+    <h3><i class="fa-solid fa-question"></i>Q5: How can I contact a1market?</h3>
+    <p>
+      You can contact us through email or the contact page.
+    </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="reveal">
+    <h2><i class="fa-solid fa-user"></i> Contact Us</h2>
+
+    <p><strong>Email:</strong> <i class="fa-solid fa-envelope"></i>help@a1market.com</p>
+    <p><strong>Website:</strong> <i class="fa-solid fa-globe"></i>www.a1market.com</p>
+    </div>
+  </section>
+
+ <!-- Footer -->
+  <footer class="custom-footer reveal">
+   <div class="footer-logo">
+    <a href="http://adtech2021.netlify.app"><img src="img/adtech.png" height="auto" width="250px"></a>
+   </div>
+
+  <nav class="footer-nav">
+    <a href="#">Home</a> |
+    <a href="about-terms.html">About</a> |
+    <a href="about-terms.html#terms">Terms & Policy</a> |
+    <a href="about-terms.html#faq">FAQs</a>
+  </nav>
+
+  <p class="copyright">
+   <span id="dateTime"></span> | IP Address : 
+   <span id="ipAddress" class="ip">Fatching...</span>
+   <br> Designed & Developed with ♥️ ADTech India
+  </p></p>
+</footer>
+  <script src="js/footer-time.js"></script>    
+  <script src="js/scroll.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/ripple.js"></script>
+   </body>
+</html>
+
+
+  <script src="js/sidebar.js"></script>
+
+</body>
+</html>
