@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  width: 95%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins' 'Montserrat';
+}
+
+
+/* Block view & download Image */
+img {
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    background: white;
+}
+
+/* Block Text selection */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content {
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.img {
+  height: auto;
+  width: 150px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 2px cyan;
+  border-radius: 20px;
+}
+.content h3 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: 'Poppins';
+}
+
+.content p {
+  color: #ccc;
+  font-size: 18px;
+  font-family: 'Poppins';
+ }
+
+main {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;    
+  gap: 10px;
+}
+
+main .btn {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px; 
+}
+
+main img {
+  height: auto;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.owner {
+  display: inline-block;
+  margin:  50px; 
+  font-size: 15px;
+  font-family: 'Montserrat';
+  text-align: center;
+  color: #999;
+}
